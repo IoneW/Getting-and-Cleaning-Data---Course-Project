@@ -2,27 +2,33 @@
 --------------------------------------------
 
 This repository contains the files required for the Coursera Getting and Cleaning Data Course Project. These files are: 
-* readme.md - 
-* codebook.md 
+
+* README.md 
+* CodeBook.md 
 * run_analysis.R 
 
+This project takes data from the Human Activity Recognition Using Smartphones Data Set, downloaded from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-name of the projects and all sub-modules and libraries (sometimes they are named different and very confusing to new users) 
-descriptions of all the project, and all sub-modules and libraries 
-5-line code snippet on how its used (if it's a library) 
-copyright and licensing information (or "Read LICENSE") 
-instruction to grab the documentation 
-instructions to install, configure, and to run the programs 
-instruction to grab the latest code and detailed instructions to build it (or quick overview and "Read INSTALL") 
-list of authors or "Read AUTHORS" 
-instructions to submit bugs, feature requests, submit patches, join mailing list, get announcements, or join the user or dev community in other forms 
-other contact info (email address, website, company name, address, etc) 
-a brief history if it's a replacement or a fork of something else 
-legal notices (crypto stuff) 
+A full description of the data is availailable here:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+This repo contains a script (run_analysis.R) that does the following:
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+This repo also contains a code book (CodeBook.md) that describes the variables, the data, and the transformations performed to clean up the data.
 
 
 
 80 characters or less per line 
+
 single empty line between paragraphs 
+
 dashes under the headers 
+
 indent using whitespace (0x20) not tab 
