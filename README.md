@@ -22,13 +22,3 @@ This repo contains a script (run_analysis.R) that does the following:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 This repo also contains a code book (CodeBook.md) that describes the variables, the data, and the transformations performed to clean up the data.
-
-
-
-80 characters or less per line 
-
-single empty line between paragraphs 
-
-dashes under the headers 
-
-indent using whitespace (0x20) not tab 
