@@ -15,14 +15,14 @@ This project uses the following files from the UCI HAR Dataset:
 This original data provided 10299 values across 561 measured variables and 3 fixed variables (subject, activity, group).
 
 
-### Transformations or work performed to clean up the data
-----------------------------------------------------------
+### Transformations performed to clean up the data
+--------------------------------------------------
 
 Subject, activity and measurements were combined in a single dataframe, adding a new 'group' column to identify whether measurements were from the training or test group. Activity IDs were replaced with lables from the 'activity_labels' file, and variables columns were named using the 'features_info' file.
 
 This dataframe was subset to only include variables that measured the mean or standard deviation.
 
-Variable names were modified for ease of understanding. 
+Variable names were modified for ease of understanding. Variable names are composed of several features, see table below.
 
 The data was then grouped by subject, activity and test/train group, and the average calculated for each variable.
 
@@ -30,12 +30,20 @@ The data was restructured from wide to long with new columns for 'variable' and 
 
 
 ### Variables
+-------------
 
-#### Variable features
+#### Fixed variables
 
-Variable names were composed of several features, detailed below:
+| Variable | Description                                   |
+|----------| ----------------------------------------------|
+| Subject  | ID of the subject that performed the activity |
+| Activity | activity performed, see Activity labels table |
+| Group    | train or test group                           |
 
-| Feature          | Description                                   |
+
+#### Measured variable
+
+| Variable feature | Description                                   |
 | ---------------- | --------------------------------------------- |
 | Domain           | time or frequency                             |
 | Component        | body or gravity                               |
@@ -45,7 +53,9 @@ Variable names were composed of several features, detailed below:
 | Statistic        | mean or standard deviation                    |
 | Axis             | XYZ direction components of the signal vector |
 
+#### Values
 
+Data is presented as the average of each measurement for each variable grouped by subject, activity and group.
 
 #### Activity labels
 
