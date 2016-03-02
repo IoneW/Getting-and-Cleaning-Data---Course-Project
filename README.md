@@ -1,5 +1,5 @@
 # Getting and Cleaning Data - Course Project
---------------------------------------------
+============================================
 
 This repository contains the files required for the Coursera Getting and Cleaning Data Course Project. These files are: 
 
